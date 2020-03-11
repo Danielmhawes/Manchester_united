@@ -43,7 +43,7 @@ body{
  .menu-bar ul li:hover .sub-menu-1{
      display: block;
      position: absolute;
-     background:blackS;
+     background:rgba(0, 0, 0, 0.445);
      margin-top: 15px;
      margin-left: -15px;
  }
@@ -52,8 +52,18 @@ body{
      margin: 10px;
 
  }
- .menu-bar ul li:hover .sub-menu-1 il li{
+ .menu-bar ul li:hover .sub-menu-1 ul li{
      width: 150px;
      padding: 10px;
-     border-bottom: 1px dotted white;
+     border-bottom: 1px solid white;
+     background: transparent;
+     border-radius: 0;
+     text-align:left;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+     border-bottom: none;
+
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+     color: rgba(0, 0, 0, 0.603);
  }
